@@ -1,42 +1,44 @@
 {
-  "name": "inu-next-generation-website",
-  "version": "1.0.1",
-  "private": true,
-  "type": "module",
-  "engines": { "node": ">=20" },
-  "scripts": {
-    "dev": "concurrently -k \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:client": "vite --host 0.0.0.0",
-    "dev:server": "tsx watch backend/server.ts",
-    "build": "vite build",
-    "start": "tsx backend/server.ts",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "concurrently": "^9.1.2",
-    "express": "^4.21.2",
-    "express-session": "^1.18.1",
-    "framer-motion": "^12.4.7",
-    "lucide-react": "^0.468.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.5",
-    "zod": "^3.24.2"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "4.7.0",
-    "@types/bcryptjs": "^2.4.6",
-    "@types/express": "^5.0.0",
-    "@types/express-session": "^1.18.1",
-    "@types/node": "^22.13.4",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "tsx": "^4.19.3",
-    "typescript": "~5.7.3",
-    "vite": "6.4.6"
-  }
+    "name":  "inu-next-generation-website",
+    "version":  "1.0.1",
+    "private":  true,
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=20"
+                },
+    "scripts":  {
+                    "dev":  "concurrently -k \"npm run dev:server\" \"npm run dev:client\"",
+                    "dev:client":  "vite --host 0.0.0.0",
+                    "dev:server":  "tsx watch backend/server.ts",
+                    "build":  "npm install --include=dev \u0026\u0026 npx vite build",
+                    "start":  "tsx backend/server.ts",
+                    "preview":  "vite preview"
+                },
+    "dependencies":  {
+                         "bcryptjs":  "^2.4.3",
+                         "concurrently":  "^9.1.2",
+                         "express":  "^4.21.2",
+                         "express-session":  "^1.18.1",
+                         "framer-motion":  "^12.4.7",
+                         "lucide-react":  "^0.468.0",
+                         "react":  "^18.3.1",
+                         "react-dom":  "^18.3.1",
+                         "react-router-dom":  "^7.1.5",
+                         "zod":  "^3.24.2"
+                     },
+    "devDependencies":  {
+                            "@vitejs/plugin-react":  "4.7.0",
+                            "@types/bcryptjs":  "^2.4.6",
+                            "@types/express":  "^5.0.0",
+                            "@types/express-session":  "^1.18.1",
+                            "@types/node":  "^22.13.4",
+                            "@types/react":  "^18.3.18",
+                            "@types/react-dom":  "^18.3.5",
+                            "autoprefixer":  "^10.4.20",
+                            "postcss":  "^8.5.3",
+                            "tailwindcss":  "^3.4.17",
+                            "tsx":  "^4.19.3",
+                            "typescript":  "~5.7.3",
+                            "vite":  "6.4.6"
+                        }
 }
